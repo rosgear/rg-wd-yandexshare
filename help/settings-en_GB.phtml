@@ -18,14 +18,62 @@
     <p>The сustomizing widget form can be called from <a href="<?= $url('index', 'extension:rg.be.config.desk') ?>">Configuration panel</a> or from  <a href="<?= $url('index', 'extension:rg.be.mp.wmanager') ?>">Widgets manager</a>.</p>
     <h2>Form fields</h2>
     <ul class="g-help-list">
-    <li><b>Button color scheme.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Button size.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Button shape.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Button limit.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Position in the article.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>List alignment.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Menu opening direction.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Menu location.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
-        <li><b>Button list direction.</b> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua;</li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Button color scheme.</b><br>
+            This field specifies how the social media buttons in the widget will appear: in light or dark tones, with colored icons or monochrome.<br>
+            Choose the option that best matches your page design – this will prevent the buttons from looking out of place and make them easier to spot. Available options: classic, monochrome, and monochrome 2.
+        </li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Button size.</b><br>
+            This field specifies how large the social media icons in the widget will be. You can choose a compact size to make the widget take up less space, or a larger size to make buttons easier to tap, especially on mobile devices.<br>
+            The available options are "small" (S), "medium" (M), and "large" (L): medium is the default value and strikes a good balance between visibility and compactness.<br>
+            If page space is limited, choose a small size; if clickability is important (for example, on a mobile device or for an older audience), choose a large size.
+        </li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Button shape.</b><br>
+            This field determines the shape of the social media icons in the widget: square (with right angles) or round.<br>
+            Square buttons have a more formal and modern look, fitting better into a minimalist design;<br>
+            Round buttons are softer and more familiar to many users.<br>
+            Choose the option that harmonizes with the overall style of the website.
+        </li>
+        <li><span class="g-help-fld g-help-fld_text"></span> <b>Button limit.</b><br>
+            This field specifies the maximum number of social media icons that will be displayed in the widget.<br>
+            For example, if you set the limit to 3, the widget will display only the three most popular or pre-selected buttons and hide the rest.<br>
+            This helps avoid overloading the page when there are many social media icons: instead of a long line, you'll get a compact block. 
+        </li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Position in the article.</b><br>
+            This field specifies where the widget will be placed relative to the main text: either before it (at the beginning of the article) or after it (at the end).<br>
+            If you select "before the article text," the widget will be visible immediately upon opening the page—this is good for quickly engaging those who haven't yet started reading.<br>
+            If you select "after the article text," the user will first read the material and then decide whether to share it—this option often increases conscious sharing.<br>
+            The most common placement is "after the article text": it doesn't distract from reading and logically concludes the material. However, for short posts or promotional materials, the "before the article text" option can also be suitable.
+        </li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Alignment of buttons in the list.</b><br>
+            This field specifies whether the row of social media icons in the widget will start on the left or right.<br>
+            If you select "left," the buttons will be aligned from the left edge—this is the usual option for most websites and texts in Russian.<br>
+            If you select "right," the buttons will be aligned to the right edge—this looks good in sidebars, next to headings, or in designs where the emphasis is shifted to the right.<br>
+            Choose the alignment so that the widget fits organically into the page block and doesn't appear "floating": the buttons should rest on some visual boundary (the edge of a column, the border of a card, etc.).
+        </li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Menu opening direction.</b><br>
+            This field specifies where the list of additional social networks will slide out or open if the widget has an ellipsis or arrow button.
+            <ul>
+                <li><b>Auto:</b> The system automatically decides whether to open the menu downwards or upwards. For example, if the widget is at the very bottom of the screen, the menu will open upwards to avoid extending beyond the visible area. This is the most convenient option for most cases.</li>
+                <li><b>Down:</b> The menu always opens downwards, regardless of the widget's position on the page.</li>
+                <li><b>Up:</b> The menu always opens upwards.</li>
+            </ul>
+            It's best to choose "Auto": this way, the widget won't break the layout or extend beyond the edge of the screen on mobile devices or when viewed with a small window height.
+        </li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Menu position.</b><br>
+            This field determines where the social media button block is physically rendered.<br>
+            Available values:
+            <ul>
+                <li><b>Inside container</b>: the menu is a child of the widget's main container and is positioned in the document flow. Suitable for standard layouts where the container has sufficient space and no overlapping elements;</li>
+                <li><b>Outside container</b>: the menu extends beyond the container's boundaries and is positioned absolutely or via its parent. This is used in cases where layout specifics (e.g., hard margins, fixed heights, overlapping layers) would result in the menu being partially or completely cut off by adjacent page elements when placed inside the container.</li>
+            </ul>
+        </li>
+        <li><span class="g-help-fld g-help-fld_combo"></span> <b>Button list direction.</b><br>
+            Direction determines the orientation of the social media buttons within the widget.<br>
+            Available values:
+            <ul>
+                <li><b>Horizontal</b>: Buttons are placed in a single row. Suitable for wide containers, footers, headers, and blocks with sufficient horizontal space;</li>
+                <li><b>Vertical</b>: Buttons are arranged in a column, one below the other. Optimal for narrow columns, sidebars, mobile versions, and places where maintaining button readability and size is important.</li>
+            <ul>
+        </li>
     </ul>
 </article>
