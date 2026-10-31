@@ -12,8 +12,8 @@
 return [
     'name'        => 'Yandex Share',
     'description' => 'Yandex Share',
-    'version'     => '2.0',
-    'versionDate' => '20-12-2017',
+    'version'     => '2.0.1',
+    'versionDate' => '29-10-2026',
     'author'      => 'RosGear',
     'authorUrl'   => 'https://rosgear.ru/',
     'email'       => 'info@rosgear.ru',
